@@ -1,11 +1,15 @@
 <?php
 
+//php lenguaje de tipado dinamico y gradual
+
+//declarando variables
 echo "Hola mundo \n";
 echo "\n";
 $name = "Juanqui!!";
 $int = 56;
 $int2 = 10;
-$suma_variables = $int + $int2;
+$char_numero = "30";
+$suma_variables = $int + $int2 + $char_numero;
 $boolean_weirdo = true;
 
 $suma_rara = 48 + "2"; //consola: 50 💀💀
@@ -17,6 +21,12 @@ $intento_concatenar = "20" + "20"; // consola: 40 💀💀
 echo "\n";
 echo "\n";
 echo $name;
+
+//para concatenar texto utilizar .
+$concatenar_num = $int . $suma_variables; //salida 5696
+
+//instruccion para obtener en tipo de variable
+
 
 ?>
 
@@ -31,11 +41,18 @@ echo $name;
     <?= $suma_variables;
     ?> 
 </h1>
+<h1>
+    <?= $concatenar_num;
+    ?> 
+</h1>
+
 
 <h1>
     <?= "Hola " . $name //para concatenar se utiliza el .
     ?> 
 </h1>
+
+
 
 
 <style> 
