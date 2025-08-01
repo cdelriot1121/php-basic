@@ -3,8 +3,7 @@
 //php lenguaje de tipado dinamico y gradual
 
 //declarando variables
-echo "Hola mundo \n";
-echo "\n";
+echo "Hola mundo"; //echo para Imprimir consola php
 $name = "Juanqui!!";
 $int = 56;
 $int2 = 10;
@@ -18,18 +17,23 @@ $intento_concatenar = "20" + "20"; // consola: 40 💀💀
 
 // El simbolo mas no puede concatenar cadenas de texto
 
-echo "\n";
-echo "\n";
-echo $name;
 
 //para concatenar texto utilizar .
 $concatenar_num = $int . $suma_variables; //salida 5696
 
-//instruccion para obtener en tipo de variable
-
+//instruccion para obtener en tipo de variable var_dump
+$tipo_name = var_dump($name);
+$tipo_int1 = var_dump($int);
+$tipo_intentoConcatenar = var_dump($intento_concatenar);
 
 ?>
 
+
+<p>
+    <?= $tipo_int1;?>
+    <?= $tipo_name;?> 
+    <?= $tipo_intentoConcatenar;?>
+</p>
 
 
 <h1>
