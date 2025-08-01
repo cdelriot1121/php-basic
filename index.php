@@ -3,7 +3,8 @@
 //php lenguaje de tipado dinamico y gradual
 
 //declarando variables
-echo "Hola mundo"; //echo para Imprimir consola php
+echo "Hola mundo "; //echo para Imprimir consola php
+echo " <h1> Hola mundo </h1>";
 $name = "Juanqui!!";
 $int = 56;
 $int2 = 10;
@@ -25,6 +26,12 @@ $concatenar_num = $int . $suma_variables; //salida 5696
 $tipo_name = var_dump($name);
 $tipo_int1 = var_dump($int);
 $tipo_intentoConcatenar = var_dump($intento_concatenar);
+
+
+//Utilizando funciones getType
+echo gettype($intento_concatenar) . "\n";
+echo gettype($name);
+
 
 ?>
 
