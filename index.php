@@ -6,6 +6,7 @@
 echo "Hola mundo "; //echo para Imprimir consola php
 echo " <h1> Hola mundo </h1>";
 $name = "Juanqui!!";
+$age = 20;
 $int = 56;
 $int2 = 10;
 $char_numero = "30";
@@ -29,25 +30,36 @@ $tipo_intentoConcatenar = var_dump($intento_concatenar);
 
 
 //Utilizando funciones getType
-echo gettype($intento_concatenar) . "\n";
-echo gettype($name);
+// echo gettype($intento_concatenar) . "\n";
+// echo gettype($name);
 
+
+// forzar una variable a cambiar su tipo... TypeCasting
+$var_int_bool = (bool) 24;
+echo gettype($var_int_bool);
 
 ?>
 
+<!-- Forma de concatenar los resultados Interpolacion de cadenas--->
+<h1>
+    
+    <?= 
+    "Hola "
+    . $name 
+    . ", con la edad de "
+    . $age
+    
+    ?>
 
-<p>
-    <?= $tipo_int1;?>
-    <?= $tipo_name;?> 
-    <?= $tipo_intentoConcatenar;?>
-</p>
+</h1>
 
 
+
+<!-- Imprimir los resultados --->
 <h1>
     <?= $suma_rara;
     ?> 
 </h1>
-
 <h1>
     <?= $suma_variables;
     ?> 
@@ -56,16 +68,16 @@ echo gettype($name);
     <?= $concatenar_num;
     ?> 
 </h1>
-
-
 <h1>
     <?= "Hola " . $name //para concatenar se utiliza el .
     ?> 
 </h1>
 
-
-
-
+<p>
+    <?= $tipo_int1;?>
+    <?= $tipo_name;?> 
+    <?= $tipo_intentoConcatenar;?>
+</p>
 <style> 
     /* estilos que agrego el midu*/
     :root{
